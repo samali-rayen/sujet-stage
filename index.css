@@ -1,0 +1,105 @@
+body{
+    background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    font-size:xx-large;
+    background-attachment: fixed;
+    margin:40PX ;
+}
+div{
+    border-radius:30px;
+    background-color: rgba(0, 0, 255, 0.049);
+    padding: 40px;
+    box-shadow: 5px 5px 5px #740068;
+}
+th, td {
+
+    border: 1px solid rgb(132, 0, 136) ;
+}
+td{
+    padding: 10px;
+}
+.text-el{
+    
+    width: 45cm;
+}
+#tablewidth{
+    width: 49cm;
+}
+
+.text{
+    width: 49cm;
+    text-align: center;
+}
+p,span{
+    text-align: center;
+    border: 1px solid rgb(132, 0, 136) ;
+    width:15cm;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+.pos{
+    margin-left: 1cm;
+}
+.form-submit-button {
+	background: #B9DFFF;
+	color: black;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+    margin-left: 50%;
+    padding: 10px;
+    width: 200px;
+}
+.form-submit-button:hover {
+	background: #9a01bc;
+	color: black;
+	border: 1px solid #eee;
+	border-radius: 20px;
+	box-shadow: 5px 5px 5px #eee;
+	text-shadow: none;
+}
+input{
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 7px;
+    border: none;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+}
+input:hover{
+    box-shadow: 5px 5px 5px #f27eff;
+}
+textarea{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin-top: 20px;
+
+}
+textarea:hover{
+    box-shadow: 5px 5px 5px #f27eff;
+    transition: 0.5s;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    padding: 30px;
+}
+.box{
+    background-color: rgba(131, 0, 136, 0.302);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    max-width: 1500px;
+    padding: 8px;
+}

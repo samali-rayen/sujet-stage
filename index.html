@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <title>CNI cite officiel</title>
+</head>
+<body>
+    <div>
+        <table class="curve-el">
+            <tr class="curve-el">
+                <td  class="curve-el" rowspan="2"><a href="http://www.cni.tn/index.php/fr/?view=page&id=44" target="blank"><img src="images.jpg" alt="logo-CNI"></a></td>
+                <td class="text"> <h1 class="title-el">Systeme De Management De la Qualité</h1></td>
+            </tr>
+            <tr>
+                <td class="text"> <h1 class="title-el">Fiche D'appreciation Qualitative</h1></td>
+            </tr>
+        </table>
+    
+        <br>
+        
+        <form action="index.php" method="get">  
+            <table >
+                <tr >
+                    <td colspan="2" class="text-el">
+                        <label for="int-for">Intitulé de la formation</label>
+                        <input type="text" id="int-for" name="int-form">
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td class="text-el">
+                        <label for="name-form">Nom du formateur</label>
+                        <input type="text" id="name-form" name="name-form">
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <td class="text-el">
+                        <label for="date-el">Date de la formation</label>
+                        <input type="date" id="date-el" name="date-el">
+                    </td>
+                    <td class="text-el">
+                        <label for="lieu-el">Lieu de la formation</label>
+                        <input type="text" id="lieu-el" name="lieu-el">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-el">
+                        <label for="nmpar-el">Nom du participant(Facultatif)</label>
+                        <input type="text"id="nmpar-el" name="numpar-el">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2" class="text-el">
+                        <label for="etp-el">Etablissement du participant</label>
+                        <input type="text" id="etp-el" name="etp-el">
+                    </td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                     <td class="text-el">Evaluation des formateurs</td>            
+                     <td class="text-el"><label for="note1">Trés bien(5)</label></td>            
+                     <td class="text-el"><label for="note2">Bien(4)</label></td>            
+                     <td class="text-el"><label for="note3">Moyen(3)</label></td>            
+                     <td class="text-el"><label for="note4">Non satisfaisaant(0)</label></td>            
+                </tr>
+                <tr>
+                    <td class="text-el">Maitrise du sujet qualité pédagijique(rythme,communication,...),gestion de temps,conformité du programme</td>
+                    <td class="text-el"><input type="radio" name="note" value="5" id="note1" onclick="add5()"></td>
+                    <td class="text-el"><input type="radio" name="note" value="4"  id="note2" onclick="add4()"></td>
+                    <td class="text-el"><input type="radio" name="note" value="3"  id="note3"onclick="add3()" ></td>
+                    <td class="text-el"><input type="radio" name="note" value="0"  id="note4" ></td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                     <td class="text-el">Evaluation de l'environnement</td>            
+                     <td class="text-el"><label for="note-1">Trés bien(5)</label></td>            
+                     <td class="text-el"><label for="note-2">Bien(4)</label></td>            
+                     <td class="text-el"><label for="note-3">Moyen(3)</label></td>            
+                     <td class="text-el"><label for="note-4">Non satisfaisaant(0)</label></td>            
+                </tr>
+                <tr>
+                    <td class="text-el">accueil,salle de formation,pause,...</td>
+                    <td class="text-el"><input type="radio" name="note1"  value="5" id="note-1" onclick="add5()"></td>
+                    <td class="text-el"><input type="radio" name="note1"  value="4" id="note-2" onclick="add4()"></td>
+                    <td class="text-el"><input type="radio" name="note1"  value="3" id="note-3" onclick="add3()"></td>
+                    <td class="text-el"><input type="radio" name="note1"  value="0" id="note-4" ></td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                     <td class="text-el">Evaluation des moyens pedagogiques</td>            
+                     <td class="text-el"><label for="note12">Trés bien(5)</label></td>            
+                     <td class="text-el"><label for="note22">Bien(4)</label></td>            
+                     <td class="text-el"><label for="note32">Moyen(3)</label></td>            
+                     <td class="text-el"><label for="note42">Non satisfaisaant(0)</label></td>            
+                </tr>
+                <tr>
+                    <td class="text-el">Materiel informatique,support de cours,connection,...</td>
+                    <td class="text-el"><input type="radio" name="note2"  value="5" id="note12" onclick="add5()"></td>
+                    <td class="text-el"><input type="radio" name="note2"  value="4" id="note22" onclick="add4()"></td>
+                    <td class="text-el"><input type="radio" name="note2"  value="3" id="note32" onclick="add3()"></td>
+                    <td class="text-el"><input type="radio" name="note2"  value="0" id="note42" ></td>
+                </tr>
+            </table>
+            <br>
+            <table>
+                <tr>
+                     <td class="text-el">Evaluation de la formation</td>            
+                     <td class="text-el"><label for="note13">Trés bien(5)</label></td>            
+                     <td class="text-el"><label for="note23">Bien(4)</label></td>            
+                     <td class="text-el"><label for="note33">Moyen(3)</label></td>            
+                     <td class="text-el"><label for="note43">Non satisfaisaant(0)</label></td>            
+                </tr>
+                <tr>
+                    <td class="text-el">Objectifs atteints</td>
+                    <td class="text-el"><input type="radio" name="note4"  value="5" id="note13" onclick="add5()"></td>
+                    <td class="text-el"><input type="radio" name="note4"  value="4" id="note23" onclick="add4()"></td>
+                    <td class="text-el"><input type="radio" name="note4"  value="3" id="note33" onclick="add3()"></td>
+                    <td class="text-el"><input type="radio" name="note4"  value="0" id="note43" ></td>
+                </tr>
+            </table>
+            <p>Note Globale de satisfaction(la somme des notes) <span id="note">/20</span></p>
+            <label for="av-el">1.Cette formation a-t-elle fait naitre de nouveau besoins en formation?</a-t-elle></label>
+            <input type="checkbox" id="av-el" name="quest" value="y">oui
+            <input type="checkbox" name="quest" id="av-el" value="n">non
+            <br>
+            <label for="para1">Lesquels?</label>
+            <textarea name="para1" id="para1" cols="20" rows="5"></textarea>
+            <h4 class="box">Coordonnées du responsable à contacter dans votre établissment pour une prochaine formation:</h4>
+            <span>
+                <label for="name">Nom responsable</label>
+                <input type="text" id="name" name="name">
+                <label for="tel">Tel</label>
+                <input type="number" maxlength="8" name="tel" id="tel" name="tel-el">
+                <label for="mail" >Email</label>
+                <input type="email"name="email">
+                <br>
+            </span>
+            <label for="para2" class="pos">2.Suggestion et recommandation d'amelioration:</label>
+            <textarea name="para2" id="para2" cols="20" rows="5"></textarea>    
+            <br>
+            <input type="submit" class="form-submit-button ">
+        </form>
+        </div>
+        <script src="index.js"></script>
+</body>
+</html>
